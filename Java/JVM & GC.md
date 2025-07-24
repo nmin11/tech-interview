@@ -29,4 +29,4 @@ Garbage Collector는 먼저 Stack 영역의 모든 변수를 스캔하면서 각
 
 Reference
 
-- [👌던의 JVM의 Garbage Collector](https://youtu.be/vZRmCbl871I?si=yN0Q22MZMxLSlaYO)
+- [10분 테코톡 - 👌던의 JVM의 Garbage Collector](https://youtu.be/vZRmCbl871I?si=yN0Q22MZMxLSlaYO)

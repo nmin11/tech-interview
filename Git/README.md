@@ -18,4 +18,4 @@
 
 Reference
 
-- [Reset, Revert 차이 간략정리](https://youngest-programming.tistory.com/220)
+- [막무가내막내 - Reset, Revert 차이 간략정리](https://youngest-programming.tistory.com/220)

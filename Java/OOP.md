@@ -13,4 +13,4 @@
 
 Reference
 
-- [자바의 추상 클래스와 인터페이스](https://brunch.co.kr/@kd4/6)
+- [강관우 - 자바의 추상 클래스와 인터페이스](https://brunch.co.kr/@kd4/6)

@@ -34,4 +34,4 @@ SELECT 이후 중복된 행 제거
 
 Reference
 
-- [Order of execution of a Query](https://sqlbolt.com/lesson/select_queries_order_of_execution)
+- [SQLBolt - Order of execution of a Query](https://sqlbolt.com/lesson/select_queries_order_of_execution)

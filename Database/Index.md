@@ -9,5 +9,5 @@
 
 Reference
 
-- [DB 인덱싱이란?](https://velog.io/@bsjp400/Database-DB-%EC%9D%B8%EB%8D%B1%EC%8B%B1Indexing%EC%9D%B4%EB%9E%80)
-- [인덱스란?](https://mangkyu.tistory.com/96)
+- [bsjp400 - DB 인덱싱이란?](https://velog.io/@bsjp400/Database-DB-%EC%9D%B8%EB%8D%B1%EC%8B%B1Indexing%EC%9D%B4%EB%9E%80)
+- [망나니개발자 - 인덱스란?](https://mangkyu.tistory.com/96)
