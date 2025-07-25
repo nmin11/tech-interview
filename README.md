@@ -19,7 +19,7 @@
 ### JPA
 
 - [영속성 컨텍스트란?](https://github.com/nmin11/tech-interview/blob/main/JPA/Persistence.md#%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%9E%80)
-- [Entity 생명주기](https://github.com/nmin11/tech-interview/blob/main/JPA/Persistence.md#%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%9E%80)
+- [Entity 생명주기](https://github.com/nmin11/tech-interview/blob/main/JPA/Entity.md#entity-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
 - [N+1 Select 문제](https://github.com/nmin11/tech-interview/blob/main/JPA/Entity.md#n1-select-%EB%AC%B8%EC%A0%9C)
 
 ### OOP
