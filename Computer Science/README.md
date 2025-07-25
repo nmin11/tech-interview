@@ -42,3 +42,19 @@
 Reference
 
 - [Inpa - 👩‍💻 멀티 프로세스 vs 멀티 스레드 비교 💯 완전 총정리](https://inpa.tistory.com/entry/👩‍💻-multi-process-multi-thread)
+
+## 동기와 비동기의 차이
+
+**동기(Synchronous)**
+
+- 요청을 보낸 후 응답이 올 때까지 Blocking 상태로 대기하는 방식
+- 모든 작업을 순차적으로 처리
+- 작업의 순서가 반드시 유지되어야 하는 경우에 사용됨
+
+**비동기(Asynchronous)**
+
+- 요청을 보낸 후 응답을 기다리지 않고 Non-Blocking 방식으로 다음 작업 수행
+- 요청의 병렬 처리 가능
+- callback, promise, async/await 등의 구조를 활용하므로 로직의 복잡도 증가
+- I/O 작업에 주로 사용됨
+  - HTTP 요청, 파일 입출력 등
