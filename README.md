@@ -36,6 +36,10 @@
 - [Index란?](https://github.com/nmin11/tech-interview/blob/main/Database/Index.md#index%EB%9E%80)
 - [SQL 명령어의 실행 순서](https://github.com/nmin11/tech-interview/blob/main/Database/SQL.md#sql-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C)
 
+### Network
+
+- [OSI 7 Layer](https://github.com/nmin11/tech-interview/tree/main/Network#osi-7-layer)
+
 ### Web
 
 - [HTTP와 HTTPS의 차이](https://github.com/nmin11/tech-interview/blob/main/Web/HTTP.md#http%EC%99%80-https%EC%9D%98-%EC%B0%A8%EC%9D%B4)
