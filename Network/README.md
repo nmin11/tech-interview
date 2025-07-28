@@ -1,5 +1,7 @@
 ## OSI 7 Layer
 
+<img width="600" height="764" alt="osi-model-7-layers-1" src="https://github.com/user-attachments/assets/4a0139cf-b7ff-47c9-ac7c-96154b4b3f2c" />
+
 ### 정의
 
 - OSI(Open Systems Interconnection) 모델은 네트워크 시스템의 통신 방식을 설명
