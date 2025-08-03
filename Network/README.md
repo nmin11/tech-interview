@@ -78,3 +78,62 @@
 Reference
 
 - [bmc - OSI Model: The 7 Layers of Network Architecture](https://www.bmc.com/blogs/osi-model-7-layers)
+
+## 주소창에 URL을 입력하면 벌어지는 일들
+
+### Summary
+
+**Redirect → Cache → DNS → IP Routing → TCP → Request → Response → Render**
+
+### 1. Redirect
+
+- 리다이렉트가 존재할 경우 리다이렉트 진행
+- 없으면 그대로 해당 요청 진행
+
+### 2. Cache
+
+- 해당 요청이 캐싱 가능한지 파악
+- 이미 캐시되어 있는 요청이라면 캐싱된 값 반환
+
+Browser Cache
+
+- 쿠키, 로컬 스토리지 등을 포함한 캐시
+- private 캐시라고도 불림
+- 브라우저 자체가 문서들을 보유해두는 것
+
+Shared Cache
+
+- 클라이언트와 서버 사이, 대표적으로 프록시 서버가 캐싱을 하는 것
+- "리버스 프록시를 둬서 내부 서버로 포워드한다" 라고도 표현함
+- AWS CloudFront, Cloudflare 등
+
+### 3. DNS(Domain Name System)
+
+- 계층적 도메인 구조와 분산된 데이터베이스 활용
+- FQDN(Fully Qualified Domain Name)을 IP로 바꿔주는 시스템
+- 구성 요소
+  - Resolver: DNS 요청을 Name 서버에 물어보고, 그 응답값을 클라이언트에 전달
+  - Name 서버: 도메인 이름을 IP 주소로 변환하는 서버
+
+DNS Cache
+
+- 요청된 적이 있는 도메인 이름을 로컬 PC에 자동으로 저장해두는 것
+- 브라우저 캐싱과 OS 캐싱이 있음
+
+### 4. IP Routing
+
+- IP를 기반으로 실제 서버 주소를 찾아가는 과정
+
+### 5. TCP Handshake
+
+- TCP 3-way 및 TLS handshake 방식으로 연결
+- 이후 드디어 요청 및 응답이 이루어짐
+
+### 6. Redner
+
+- 요청한 컨텐츠를 서버로부터 다운로드
+- 받은 데이터를 바탕으로 브라우저 엔진이 브라우저 렌더링 과정을 거침
+
+Reference
+
+- [큰돌의터전 - www.naver.com을 주소창에 치면 무슨 일이 일어날까요?](https://youtu.be/YahjHM9UNCA?si=J_yl-Y_-VXkIKeBh)
