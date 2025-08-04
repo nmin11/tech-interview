@@ -46,6 +46,7 @@
 - [HTTP와 HTTPS의 차이](https://github.com/nmin11/tech-interview/blob/main/Web/HTTP.md#http%EC%99%80-https%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 - [HTTPS의 작동 방식](https://github.com/nmin11/tech-interview/blob/main/Web/HTTP.md#https%EC%9D%98-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D)
 - [RESTful API란?](https://github.com/nmin11/tech-interview/blob/main/Web/API.md#restful-api%EB%9E%80)
+- [Web Server 와 WAS](https://github.com/nmin11/tech-interview/blob/main/Web/Server.md#web-server-%EC%99%80-was)
 - [JWT](https://github.com/nmin11/tech-interview/blob/main/Web/Security.md#jwt)
 - [OAuth 동작 흐름](https://github.com/nmin11/tech-interview/blob/main/Web/Security.md#oauth-%EB%8F%99%EC%9E%91-%ED%9D%90%EB%A6%84)
 
