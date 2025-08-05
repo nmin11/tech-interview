@@ -40,6 +40,7 @@
 
 - [OSI 7 Layer](https://github.com/nmin11/tech-interview/tree/main/Network#osi-7-layer)
 - [주소창에 URL을 입력하면 벌어지는 일들](https://github.com/nmin11/tech-interview/tree/main/Network#%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-url%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%98%EB%A9%B4-%EB%B2%8C%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%BC%EB%93%A4)
+- [로드밸런싱](https://github.com/nmin11/tech-interview/blob/main/Network/README.md#%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1)
 
 ### Web
 
