@@ -181,6 +181,8 @@ Reference
 
 ### 주요 로드밸런싱 알고리즘들
 
+![loadbalance-algorithms](https://github.com/user-attachments/assets/5bfa0e4c-5e77-46d7-be75-5a05d89a8d75)
+
 **Round Robin**
 
 - 요청을 순차적, 순환적으로 분산하는 간단한 방식
