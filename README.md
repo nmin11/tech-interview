@@ -17,10 +17,10 @@
 
 ### Spring
 
-- [Spring을 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#spring%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
-- [DI(Dependency Injection)](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#didependency-injection)
-- [IoC(Inversion of Control)는 무엇인가](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#iocinversion-of-control%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-- [AOP를 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#aop%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+- [Spring을 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Basic.md/#spring%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+- [DI(Dependency Injection)](https://github.com/nmin11/tech-interview/tree/main/Spring/Basic.md/#didependency-injection)
+- [IoC(Inversion of Control)는 무엇인가](https://github.com/nmin11/tech-interview/tree/main/Spring/Basic.md/#iocinversion-of-control%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+- [AOP를 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Basic.md/#aop%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
 - [Spring Security 작동 방식](https://github.com/nmin11/tech-interview/blob/main/Spring/Security.md#spring-security-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D)
 
 ### JPA
