@@ -1,68 +1,66 @@
-<a href="https://nmin1124.gitbook.io/tech-interview?utm_source=gitbook_readme_badge&utm_medium=organic&utm_campaign=preview_documentation&utm_content=link">
-  <img
-    src="https://img.shields.io/static/v1?message=Documented%20on%20GitBook&logo=gitbook&logoColor=ffffff&label=%20&labelColor=5c5c5c&color=3F89A1"
-  />
-</a>
+# README
 
-## 📘 Table of Contents
+[![](https://img.shields.io/static/v1?message=Documented%20on%20GitBook\&logo=gitbook\&logoColor=ffffff\&label=%20\&labelColor=5c5c5c\&color=3F89A1)](https://nmin1124.gitbook.io/tech-interview?utm_source=gitbook_readme_badge\&utm_medium=organic\&utm_campaign=preview_documentation\&utm_content=link)
 
-### Java
+### 📘 Table of Contents
 
-- [JVM(Java Virtual Machine)은 무엇인가?](https://github.com/nmin11/tech-interview/blob/main/Java/JVM%20%26%20GC.md#jvmjava-virtual-machine%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-- [GC(Garbage Collector)의 동작 방식](https://github.com/nmin11/tech-interview/blob/main/Java/JVM%20%26%20GC.md#gcgarbage-collector%EC%9D%98-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D)
-- [abstract class & interface](https://github.com/nmin11/tech-interview/blob/main/Java/OOP.md#abstract-class--interface)
-- [ArrayList vs LinkedList](https://github.com/nmin11/tech-interview/blob/main/Java/Collection.md#arraylist-vs-linkedlist)
-- [== 연산과 equals() 차이](https://github.com/nmin11/tech-interview/blob/main/Java/Syntax.md#-%EC%97%B0%EC%82%B0%EA%B3%BC-equals-%EC%B0%A8%EC%9D%B4)
-- [static 키워드의 동작 방식](https://github.com/nmin11/tech-interview/blob/main/Java/Syntax.md#static-%ED%82%A4%EC%9B%8C%EB%93%9C%EC%9D%98-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D)
+#### Java
 
-### Spring
+* [JVM(Java Virtual Machine)은 무엇인가?](<Java/JVM & GC.md#jvmjava-virtual-machine은-무엇인가>)
+* [GC(Garbage Collector)의 동작 방식](<Java/JVM & GC.md#gcgarbage-collector의-동작-방식>)
+* [abstract class & interface](Java/OOP.md#abstract-class--interface)
+* [ArrayList vs LinkedList](Java/Collection.md#arraylist-vs-linkedlist)
+* [== 연산과 equals() 차이](Java/Syntax.md#-연산과-equals-차이)
+* [static 키워드의 동작 방식](Java/Syntax.md#static-키워드의-동작-방식)
 
-- [Spring을 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#spring%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
-- [DI(Dependency Injection)](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#didependency-injection)
-- [IoC(Inversion of Control)는 무엇인가](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#iocinversion-of-control%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-- [AOP를 사용하는 이유](https://github.com/nmin11/tech-interview/tree/main/Spring/Concepts.md/#aop%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
-- [Spring Security 작동 방식](https://github.com/nmin11/tech-interview/blob/main/Spring/Security.md#spring-security-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D)
+#### Spring
 
-### JPA
+* [Spring을 사용하는 이유](Spring/Concepts.md#spring)
+* [DI(Dependency Injection)](Spring/Concepts.md#di-dependency-injection)
+* [IoC(Inversion of Control)는 무엇인가](Spring/Concepts.md#ioc-inversion-of-control)
+* [AOP를 사용하는 이유](Spring/Concepts.md#aop)
+* [Spring Security 작동 방식](Spring/Security.md#spring-security-작동-방식)
 
-- [영속성 컨텍스트란?](https://github.com/nmin11/tech-interview/blob/main/JPA/Persistence.md#%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%9E%80)
-- [Entity 생명주기](https://github.com/nmin11/tech-interview/blob/main/JPA/Entity.md#entity-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
-- [N+1 Select 문제](https://github.com/nmin11/tech-interview/blob/main/JPA/Entity.md#n1-select-%EB%AC%B8%EC%A0%9C)
+#### JPA
 
-### OOP
+* [영속성 컨텍스트란?](JPA/Persistence.md#영속성-컨텍스트란)
+* [Entity 생명주기](JPA/Entity.md#entity-생명주기)
+* [N+1 Select 문제](JPA/Entity.md#n1-select-문제)
 
-- [OOP의 핵심 개념들](https://github.com/nmin11/tech-interview/tree/main/OOP#oop%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90%EB%93%A4)
-- [SOLID 원칙이란?](https://github.com/nmin11/tech-interview/tree/main/OOP#solid-%EC%9B%90%EC%B9%99%EC%9D%B4%EB%9E%80)
-- [Overloading과 Overriding의 차이](https://github.com/nmin11/tech-interview/tree/main/OOP#overloading%EA%B3%BC-overriding%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+#### OOP
 
-### Database
+* [OOP의 핵심 개념들](https://github.com/nmin11/tech-interview/tree/main/OOP#oop%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90%EB%93%A4)
+* [SOLID 원칙이란?](https://github.com/nmin11/tech-interview/tree/main/OOP#solid-%EC%9B%90%EC%B9%99%EC%9D%B4%EB%9E%80)
+* [Overloading과 Overriding의 차이](https://github.com/nmin11/tech-interview/tree/main/OOP#overloading%EA%B3%BC-overriding%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 
-- [Connection Pool](https://github.com/nmin11/tech-interview/blob/main/Database/Connection%20Pool.md#connection-pool)
-- [Transaction이란?](https://github.com/nmin11/tech-interview/blob/main/Database/Transaction.md#transaction%EC%9D%B4%EB%9E%80)
-- [트랜잭션 격리 수준](https://github.com/nmin11/tech-interview/blob/main/Database/Transaction.md#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80)
-- [Index란?](https://github.com/nmin11/tech-interview/blob/main/Database/Index.md#index%EB%9E%80)
-- [SQL 명령어의 실행 순서](https://github.com/nmin11/tech-interview/blob/main/Database/SQL.md#sql-%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C)
+#### Database
 
-### Network
+* [Connection Pool](<Database/Connection Pool.md#connection-pool>)
+* [Transaction이란?](Database/Transaction.md#transaction이란)
+* [트랜잭션 격리 수준](Database/Transaction.md#트랜잭션-격리-수준)
+* [Index란?](Database/Index.md#index란)
+* [SQL 명령어의 실행 순서](Database/SQL.md#sql-명령어의-실행-순서)
 
-- [OSI 7 Layer](https://github.com/nmin11/tech-interview/tree/main/Network#osi-7-layer)
-- [주소창에 URL을 입력하면 벌어지는 일들](https://github.com/nmin11/tech-interview/tree/main/Network#%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-url%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%98%EB%A9%B4-%EB%B2%8C%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%BC%EB%93%A4)
-- [로드밸런싱](https://github.com/nmin11/tech-interview/blob/main/Network/README.md#%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1)
+#### Network
 
-### Web
+* [OSI 7 Layer](https://github.com/nmin11/tech-interview/tree/main/Network#osi-7-layer)
+* [주소창에 URL을 입력하면 벌어지는 일들](https://github.com/nmin11/tech-interview/tree/main/Network#%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-url%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%98%EB%A9%B4-%EB%B2%8C%EC%96%B4%EC%A7%80%EB%8A%94-%EC%9D%BC%EB%93%A4)
+* [로드밸런싱](Network/#로드밸런싱)
 
-- [HTTP와 HTTPS의 차이](https://github.com/nmin11/tech-interview/blob/main/Web/HTTP.md#http%EC%99%80-https%EC%9D%98-%EC%B0%A8%EC%9D%B4)
-- [HTTPS의 작동 방식](https://github.com/nmin11/tech-interview/blob/main/Web/HTTP.md#https%EC%9D%98-%EC%9E%91%EB%8F%99-%EB%B0%A9%EC%8B%9D)
-- [RESTful API란?](https://github.com/nmin11/tech-interview/blob/main/Web/API.md#restful-api%EB%9E%80)
-- [Web Server 와 WAS](https://github.com/nmin11/tech-interview/blob/main/Web/Server.md#web-server-%EC%99%80-was)
-- [JWT](https://github.com/nmin11/tech-interview/blob/main/Web/Security.md#jwt)
-- [OAuth 동작 흐름](https://github.com/nmin11/tech-interview/blob/main/Web/Security.md#oauth-%EB%8F%99%EC%9E%91-%ED%9D%90%EB%A6%84)
+#### Web
 
-### Computer Science
+* [HTTP와 HTTPS의 차이](Web/HTTP.md#http와-https의-차이)
+* [HTTPS의 작동 방식](Web/HTTP.md#https의-작동-방식)
+* [RESTful API란?](Web/API.md#restful-api란)
+* [Web Server 와 WAS](Web/Server.md#web-server-와-was)
+* [JWT](Web/Security.md#jwt)
+* [OAuth 동작 흐름](Web/Security.md#oauth-동작-흐름)
 
-- [멀티 프로세스와 멀티 스레드](https://github.com/nmin11/tech-interview/blob/main/Computer%20Science/README.md#%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C)
-- [동기와 비동기의 차이](https://github.com/nmin11/tech-interview/tree/main/Computer%20Science#%EB%8F%99%EA%B8%B0%EC%99%80-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+#### Computer Science
 
-### Git
+* [멀티 프로세스와 멀티 스레드](<Computer Science/#멀티-프로세스와-멀티-스레드>)
+* [동기와 비동기의 차이](https://github.com/nmin11/tech-interview/tree/main/Computer%20Science#%EB%8F%99%EA%B8%B0%EC%99%80-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 
-- [reset과 revert의 차이](https://github.com/nmin11/tech-interview/blob/main/Git/README.md#reset%EA%B3%BC-revert%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+#### Git
+
+* [reset과 revert의 차이](Git/#reset과-revert의-차이)
