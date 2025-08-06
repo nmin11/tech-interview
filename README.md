@@ -18,9 +18,9 @@
 ### Spring
 
 * [Spring을 사용하는 이유](Spring/Concepts.md#spring)
-* [DI(Dependency Injection)](Spring/Concepts.md#di-dependency-injection)
-* [IoC(Inversion of Control)는 무엇인가](Spring/Concepts.md#ioc-inversion-of-control)
-* [AOP를 사용하는 이유](Spring/Concepts.md#aop)
+* [DI(Dependency Injection)](Spring/Concepts.md#didependency-injection)
+* [IoC(Inversion of Control)는 무엇인가](Spring/Concepts.md#iocinversion-of-control는-무엇인가)
+* [AOP를 사용하는 이유](Spring/Concepts.md#aop를-사용하는-이유)
 * [Spring Security 작동 방식](Spring/Security.md#spring-security-작동-방식)
 
 ### JPA
