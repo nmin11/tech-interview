@@ -7,6 +7,7 @@
   * [Index란?](Database/Index.md)
   * [SQL 명령어의 실행 순서](Database/SQL.md)
   * [Transaction](Database/Transaction.md)
+  * [관계형 데이터베이스 vs NoSQL](Database/NoSQL.md#관계형-데이터베이스-vs-nosql)
 * [reset과 revert의 차이](Git/README.md)
 * [JPA](jpa/README.md)
   * [Entity](JPA/Entity.md)
