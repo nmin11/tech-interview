@@ -22,6 +22,7 @@
 * [영속성 컨텍스트란?](JPA/Persistence.md#영속성-컨텍스트란)
 * [Entity 생명주기](JPA/Entity.md#entity-생명주기)
 * [N+1 Select 문제](JPA/Entity.md#n1-select-문제)
+* [SQL과 JPQL에서의 `DISTINCT` 차이점](JPA/JPQL.md#sql과-jpql에서의-distinct-차이점)
 
 ### OOP
 
