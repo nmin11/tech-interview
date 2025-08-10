@@ -79,6 +79,43 @@ Reference
 
 - [bmc - OSI Model: The 7 Layers of Network Architecture](https://www.bmc.com/blogs/osi-model-7-layers)
 
+## TCP와 UDP
+
+*Transmission Control Protocol & User Datagram Protocol*
+
+**비교**
+
+| 특성        | TCP                        | UDP                   |
+| :-------: | :-------------------------: | :-------------------: |
+| 연결 방식    | 커넥션 과정 필요               | 커넥션 과정 불필요         |
+| 신뢰성      | 데이터가 목적지에 도달하는 것을 보장 | 데이터 전송을 보장할 수 없음 |
+| 속도        | 느린 편                      | 단순하고 빠른 편          |
+| 시퀀스      | 패킷들은 목적지에 순서대로 도착    | 순서 보장 없음            |
+| 에러 체킹    | 흐름을 제어하면서 에러 체킹       | 기본적인 수준의 에러 체킹   |
+| 데이터 재전송 | 가능                        | 불가능                  |
+| 브로드캐스팅  | 미지원                       | 지원                   |
+
+**TCP 사용 사례**
+
+- 웹 브라우저 및 서버
+- 이메일 (SMTP)
+- 파일 전송 (FTP)
+- 암호화 통신 (SSH)
+- 미리 녹화된 컨텐츠에 대한 스트리밍
+
+**UDP 사용 사례**
+
+- Real-Time 멀티미디어 스트리밍
+- 멀티캐스팅
+- 온라인 게임
+- DNS 쿼리
+- 라우터 간 정보 교환을 위한 프로토콜 (RIP)
+
+Reference
+
+- [GeeksforGeeks - Differences between TCP and UDP](https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp)
+- [Avast - TCP vs UDP: What’s the Difference and Which Protocol Is Better?](https://www.avast.com/c-tcp-vs-udp-difference)
+
 ## 주소창에 URL을 입력하면 벌어지는 일들
 
 ### Summary
