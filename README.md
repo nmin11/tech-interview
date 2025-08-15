@@ -44,7 +44,6 @@
 * [OSI 7 Layer](Network/README.md#osi-7-layer)
 * [TCP와 UDP](Network/README.md#tcp와-udp)
 * [주소창에 URL을 입력하면 벌어지는 일들](Network/README.md#주소창에-url을-입력하면-벌어지는-일들)
-* [로드밸런싱](Network/#로드밸런싱)
 
 ### Web
 
@@ -54,6 +53,10 @@
 * [Web Server 와 WAS](Web/Server.md#web-server-와-was)
 * [JWT](Web/Security.md#jwt)
 * [OAuth 동작 흐름](Web/Security.md#oauth-동작-흐름)
+
+### System Design
+
+* [로드밸런싱](<System Design/Load Balancer.md#로드밸런싱>)
 
 ### Computer Science
 
