@@ -39,6 +39,8 @@ Reference
 
 ## 캐싱 전략
 
+![caching-strategies](https://github.com/user-attachments/assets/b8162a37-7c9b-474b-9916-ad5d001370b0)
+
 ### Cache-Aside
 
 *Lazy Loading*
@@ -48,8 +50,6 @@ Reference
 - 읽기 작업이 쓰기 작업보다 훨씬 더 많고, 데이터가 자주 변경되지 않는 경우에 유용
 
 ### Read-Through
-
-![caching-strategies](https://github.com/user-attachments/assets/b8162a37-7c9b-474b-9916-ad5d001370b0)
 
 *Eager Loading*
 
