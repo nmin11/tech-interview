@@ -58,6 +58,7 @@
 
 * [로드밸런싱](<System Design/Load Balancer.md#로드밸런싱>)
 * [캐싱의 종류들](<System Design/Cache.md#캐싱의-종류들>)
+* [캐싱 전략](<System Design/Cache.md#캐싱-전략>)
 
 ### Computer Science
 
