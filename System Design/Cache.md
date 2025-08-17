@@ -49,6 +49,8 @@ Reference
 
 ### Read-Through
 
+![caching-strategies](https://github.com/user-attachments/assets/b8162a37-7c9b-474b-9916-ad5d001370b0)
+
 *Eager Loading*
 
 - 캐싱 작업이 애플리케이션에 의해 추상화된 방식
