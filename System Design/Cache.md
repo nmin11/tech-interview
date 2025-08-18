@@ -77,3 +77,33 @@ Reference
 - 데이터 접근 패턴이 예측 가능하며, pre-fetching 작업이 감당할 만한 경우에 유용
 
 - [Abhishek Ranjan - Caching in System Design: An In-Depth Exploration](https://medium.com/%40abhishekranjandev/caching-in-system-design-an-in-depth-exploration-b51e2c2e4dbd)
+
+## 캐시 스탬피드 현상
+
+*Thundering Herd*
+
+**개념**
+
+수많은 요청들이 동시에 캐시 미스를 겪었을 때,  
+순간적으로 DB에서 동일한 데이터를 조회하고,  
+캐시에 중복된 쓰기 연산을 하게 되는 현상
+
+**해결 방법 1 - Locking**
+
+- 한 요청 스레드가 잠금을 획득하고 캐시 적재 작업을 진행
+- 하지만 잠금으로 인한 성능 저하 가능성, 잠금 실패 예외, 잠금 생명주기, 데드락 등 다양한 상황을 고려해야만 함
+
+**해결 방법 2 - External Recomputation**
+
+- 캐시를 주기적으로 모니터링하는 별도의 스레드 활용
+- 해당 스레드는 캐시 만료가 얼마 남지 않은 경우 데이터를 갱신하여 문제 예방
+- 하지만 불필요한 데이터까지 함께 갱신하는 것에 대한 주의가 필요
+
+**해결 방법 3 - Probablistic Early Recomputation**
+
+- 캐시 만료가 얼마 남지 않았을 때, 요청 스레드 중 확률적으로 소수만 캐시 적재 작업을 병행하는 방식
+
+Reference
+
+- [Vaibhav Singh - What is Cache Stampede ?](https://medium.com/@vaibhav0109/cache-stampede-problem-5eba782a1a4f)
+- [LINE - req-shield로 캐시의 골칫거리 'Thundering Herd 문제' 쉽게 풀기!](https://techblog.lycorp.co.jp/ko/req-saver-for-thundering-herd-problem-in-cache)
