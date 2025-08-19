@@ -61,6 +61,10 @@
 * [캐싱 전략](<System Design/Cache.md#캐싱-전략>)
 * [캐시 스탬피드 현상](<System Design/Cache.md#캐시-스탬피드-현상>)
 
+### MSA
+
+* [Inbox / OutBox 패턴](MSA/README.md#inbox--outbox-패턴)
+
 ### Computer Science
 
 * [멀티 프로세스와 멀티 스레드](<Computer Science/#멀티-프로세스와-멀티-스레드>)
