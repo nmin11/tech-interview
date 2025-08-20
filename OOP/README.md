@@ -53,3 +53,7 @@ Overriding
   - 모듈 간 강결합은 구조를 이해하기 어렵게 만들며, 변경이 어려워진다
   - 강결합된 경우 단위 테스트를 하기에도 어렵다
   - 강결합된 경우 통합 테스트 또한 깨지기 쉬워진다
+
+Reference
+
+- [Baeldung - Difference Between Cohesion and Coupling](https://www.baeldung.com/cs/cohesion-vs-coupling)
