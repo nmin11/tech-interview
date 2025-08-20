@@ -29,6 +29,7 @@
 * [OOP의 핵심 개념들](OOP/README.md#oop의-핵심-개념들)
 * [SOLID 원칙이란?](OOP/README.md#solid-원칙이란)
 * [Overloading과 Overriding의 차이](OOP/README.md#overloading과-overriding의-차이)
+* [응집도와 결합도](OOP/README.md#응집도와-결합도)
 
 ### Database
 
