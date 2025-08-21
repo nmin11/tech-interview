@@ -40,6 +40,10 @@
 * [SQL 명령어의 실행 순서](Database/SQL.md#sql-명령어의-실행-순서)
 * [관계형 데이터베이스 vs NoSQL](Database/NoSQL.md#관계형-데이터베이스-vs-nosql)
 
+### Redis
+
+* [싱글 스레드로 만들어진 이유](Redis/README.md#싱글-스레드로-만들어진-이유)
+
 ### Network
 
 * [OSI 7 Layer](Network/README.md#osi-7-layer)
