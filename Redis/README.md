@@ -10,6 +10,8 @@
 
 ### Redis 6.0의 I/O 멀티스레딩
 
+<img width="801" height="318" alt="redis-6 0" src="https://github.com/user-attachments/assets/06300622-ccbd-410e-9768-8d885702a6be" />
+
 **I/O 멀티플렉싱 = 네트워크 I/O 부분에 대한 멀티 스레드 지원**
 
 - 단일 스레드를 사용하지만 여러 클라이언트의 요청을 차단하지 않도록 할 수 있게 해줌
