@@ -37,6 +37,12 @@ end
 - 핵심: 변경사항을 실제 데이터 적용에 앞서 로그로 먼저 기록해둔다
 - 2PC의 참여자 노드들의 작업에 대해 원자성 및 지속성을 보장하도록 해줌
 
+Reference
+
+- [Wikipedia - 2단계 커밋 프로토콜](https://ko.wikipedia.org/wiki/2단계_커밋_프로토콜)
+- [Humanscape Jake - ACID와 2PC](https://medium.com/humanscape-tech/acid%EC%99%80-2pc-30bef7f59331)
+- [Baeldung - Difference Between Two-Phase Commit and Saga Pattern](https://www.baeldung.com/cs/two-phase-commit-vs-saga-pattern)
+
 ## Inbox / OutBox 패턴
 
 ### Inbox 패턴
