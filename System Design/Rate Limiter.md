@@ -8,6 +8,8 @@
 
 ### Token Bucket Algorithm
 
+<img width="1042" height="745" alt="Tocken-Bucket-Algorithm" src="https://github.com/user-attachments/assets/241c2088-8100-4455-aba4-488a5cb44174" />
+
 - 개념
   - 고정된 용량의 버킷에 일정 속도로 꾸준히 토큰을 추가하고, 모든 요청마다 토큰을 소비하는 방식
   - 토큰이 남아있지 않은 경우 요청 거부
@@ -22,6 +24,8 @@
 **버스트 트래픽 허용이 필요한 경우**
 
 ### Leaky Bucket Algorithm
+
+<img width="1042" height="745" alt="Leaky-Bucket-Algorithm" src="https://github.com/user-attachments/assets/29bd1b4e-5661-4c62-b103-ee1a6afb8fbf" />
 
 - 개념
   - 고정된 용량의 버킷이 누수되는 방식으로 요청 처리
@@ -38,6 +42,8 @@
 
 ### Fixed Window Algorithm
 
+<img width="1042" height="745" alt="Fixed-Window-Algorithm" src="https://github.com/user-attachments/assets/deac45ec-4985-4027-8e46-22c25d43182b" />
+
 - 개념
   - 시간을 'window'라는 고정 간격으로 구분하고, 윈도우로 들어오는 요청을 제한하는 방식
   - 제한 초과 시 다음 윈도우까지는 처리될 수 없음
@@ -51,6 +57,8 @@
 **단순한 구현 및 성능 우선**
 
 ### Sliding Window Algorithm
+
+<img width="1042" height="745" alt="Sliding-Window-Algorithm" src="https://github.com/user-attachments/assets/bed67dfa-0e04-403b-b191-9bdee4465aca" />
 
 - 개념
   - fixed window 방식과 leaky bucket 방식의 혼합
