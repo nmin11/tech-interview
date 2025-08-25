@@ -70,6 +70,7 @@
 ### MSA
 
 * [2PC](MSA/README.md#2pc)
+* [CDC](MSA/README.md#cdc)
 * [Inbox / OutBox 패턴](MSA/README.md#inbox--outbox-패턴)
 * [Transactional Outbox 패턴](MSA/README.md#transactional-outbox-패턴)
 
