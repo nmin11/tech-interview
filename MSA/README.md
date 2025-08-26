@@ -122,3 +122,25 @@ Reference
 Reference
 
 - [29CM - 트랜잭셔널 아웃박스 패턴의 실제 구현 사례](https://medium.com/@greg.shiny82/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%94%EB%84%90-%EC%95%84%EC%9B%83%EB%B0%95%EC%8A%A4-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%8B%A4%EC%A0%9C-%EA%B5%AC%ED%98%84-%EC%82%AC%EB%A1%80-29cm-0f822fc23edb)
+
+## MDC
+
+*Mapped Diagnostic Context*
+
+**개념**
+
+- Java 진영에서 Logback 프레임워크를 통해 사용할 수 있는 기능
+  - Log4j, Log4j2, SLF4J 에서 사용 가능
+- 로그 메시지에 컨텍스트 정보를 담을 수 있게 해줌
+- Appender를 통해 액세스할 수 있는 정보들을 Map과 같은 구조로 채울 수 있음
+- 내부적으로 `ThreadLocal`을 활용해서 컨텍스트 정보를 저장하는 방식
+
+**장점**
+
+- 모든 요청의 시작부터 종료까지의 컨텍스트 정보를 추적할 수 있음
+- 스레드 고유 식별자 역할을 수행하는 `X-Correlation-Id`를 통해, 분산 시스템에서 end-to-end 추적을 가능하게 함
+
+Reference
+
+- [Robin Chen - Enhancing Logging in Spring Boot with MDC](https://medium.com/@sudacgb/enhancing-logging-in-spring-boot-with-mapped-diagnostic-context-mdc-a-step-by-step-tutorial-0a57b0304dd3)
+- [Baeldung - Improved Java Logging with MDC](https://www.baeldung.com/mdc-in-log4j-2-logback)
