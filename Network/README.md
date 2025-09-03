@@ -79,7 +79,7 @@ Reference
 
 - [bmc - OSI Model: The 7 Layers of Network Architecture](https://www.bmc.com/blogs/osi-model-7-layers)
 
-## TCP와 UDP
+## TCP & UDP
 
 *Transmission Control Protocol & User Datagram Protocol*
 

@@ -11,7 +11,7 @@
 - HTTPS 적용을 위해서는 CA(Certificate Authority) 기업으로부터 인증을 받아야 함
   - 대부분의 브라우저에는 CA 기업들의 공개 키들이 내장되어 있음
 
-## HTTPS의 작동 방식
+## HTTPS 작동 방식
 
 ![HTTPS 통신 과정](https://user-images.githubusercontent.com/75058239/166633303-b891862f-4246-4f7c-aa8a-628f850faac5.png)
 

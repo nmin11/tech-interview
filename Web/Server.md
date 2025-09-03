@@ -1,4 +1,4 @@
-## Web Server 와 WAS
+## Web Server & WAS
 
 ### Web Server
 

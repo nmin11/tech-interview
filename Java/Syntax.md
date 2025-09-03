@@ -15,7 +15,7 @@ Reference
 
 - [GeekssforGeeks - Difference Between == Operator and equals() Method in Java](https://www.geeksforgeeks.org/java/difference-between-and-equals-method-in-java)
 
-## `static` 키워드의 동작 방식
+## `static` 키워드 동작 방식
 
 **정의**
 

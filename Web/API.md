@@ -1,4 +1,4 @@
-## RESTful API란?
+## RESTful API
 
 **정의**
 
