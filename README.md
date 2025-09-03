@@ -26,7 +26,7 @@
 
 ### OOP
 
-* [OOP 핵심 5 원칙](OOP/README.md#oop-핵심-5-원칙)
+* [OOP 핵심 4원칙](OOP/README.md#oop-핵심-4원칙)
 * [SOLID 원칙](OOP/README.md#solid-원칙)
 * [Overloading과 Overriding의 차이](OOP/README.md#overloading과-overriding의-차이)
 * [응집도와 결합도](OOP/README.md#응집도와-결합도)
