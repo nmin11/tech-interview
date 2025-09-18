@@ -15,6 +15,7 @@
 * [Dependency Injection](Spring/Concepts.md#dependency-injection)
 * [Inversion of Control](Spring/Concepts.md#inversion-of-control)
 * [AOP 사용 이유](Spring/Concepts.md#aop-사용-이유)
+* [@Transactional](Spring/Transactional.md#transactional)
 * [Spring Security 작동 방식](Spring/Security.md#spring-security-작동-방식)
 
 ### JPA
