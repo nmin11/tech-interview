@@ -41,3 +41,8 @@ Reference
 
 - 카나리 그룹의 사용자가 예상치 못한 버그를 먼저 경험하게 될 수 있음
 - 트래픽 분할 로직 및 모니터링 시스템 필요
+
+Reference
+
+- [Tomas Fernandez - What Is Canary Deployment?](https://semaphore.io/blog/what-is-canary-deployment)
+- [hudi.blog - 무중단 배포 아키텍처와 배포 전략](https://hudi.blog/zero-downtime-deployment)
