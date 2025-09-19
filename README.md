@@ -81,6 +81,11 @@
 * [멀티 프로세스와 멀티 스레드](<Computer Science/README.md#멀티-프로세스와-멀티-스레드>)
 * [동기와 비동기의 차이](<Computer Science/README.md#동기와-비동기의-차이>)
 
+### CI/CD
+
+* [Blue-Green 배포 전략](CICD/README.md#blue-green-배포-전략)
+* [Canary 배포 전략](CICD/README.md#canary-배포-전략)
+
 ### Git
 
 * [reset과 revert의 차이](Git/README.md#reset과-revert의-차이)
