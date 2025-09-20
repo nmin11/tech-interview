@@ -80,6 +80,7 @@
 
 * [멀티 프로세스와 멀티 스레드](<Computer Science/README.md#멀티-프로세스와-멀티-스레드>)
 * [동기와 비동기의 차이](<Computer Science/README.md#동기와-비동기의-차이>)
+* [유저 모드와 커널 모드](<Computer Science/README.md#유저-모드와-커널-모드>)
 
 ### CI/CD
 
