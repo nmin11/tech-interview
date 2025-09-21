@@ -4,6 +4,7 @@
 
 * [JVM 정의](<Java/JVM & GC.md#jvm-정의>)
 * [GC 동작 방식](<Java/JVM & GC.md#gc-동작-방식>)
+* [Autoboxing / Unboxing](<Java/JVM & GC.md#autoboxing--unboxing>)
 * [abstract class & interface](Java/OOP.md#abstract-class--interface)
 * [ArrayList vs LinkedList](Java/Collection.md#arraylist-vs-linkedlist)
 * [== 연산과 equals() 차이](Java/Syntax.md#-연산과-equals-차이)

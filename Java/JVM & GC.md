@@ -35,3 +35,50 @@ JVM의 메모리 영역
 Reference
 
 - [10분 테코톡 - 👌던의 JVM의 Garbage Collector](https://youtu.be/vZRmCbl871I?si=yN0Q22MZMxLSlaYO)
+
+## Autoboxing / Unboxing
+
+*Wrapper 클래스가 제공하는 주요 기능*
+
+- Java 5 버전부터 등장하여 원시형 ↔︎ 래퍼 변환을 수동으로 하지 않도록 지원
+- Autoboxing: 원시형 타입을 래퍼 클래스 객체로 자동 변환
+- Unboxing: 래퍼 클래스 객체를 원시형 타입으로 자동 변환
+
+Autoboxing 예시
+
+```java
+int num = 25;
+Integer obj = num;
+```
+
+→ 컴파일 시점에서의 실제 코드
+
+```java
+Integer obj = Integer.valueOf(num);
+```
+
+Unboxing 예시
+
+```java
+Integer obj = 30;
+int num = obj;
+```
+
+→ 컴파일 시점에서의 실제 코드
+
+```java
+int num = obj.intValue();
+```
+
+※ Unboxing은 래퍼 객체와 원시형 값을 섞어서 연산할 때도 발생
+
+```java
+Integer obj = 50;
+System.out.println(obj + 10); // Unboxing 발생
+```
+
+⚠️ 래퍼 객체는 원시형 값에 비해 더 많은 메모리 공간을 차지하므로, 암시적인 Autoboxing 작업의 성능 이슈에 주의해야 한다.
+
+Reference
+
+- [Alexander Obregon - How Java’s Autoboxing and Unboxing Work](https://medium.com/@AlexanderObregon/how-javas-autoboxing-and-unboxing-work-78d9ebcdf4d1)
