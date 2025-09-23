@@ -61,6 +61,8 @@ Reference
 
 ## 유저 모드와 커널 모드
 
+![user-and-kernel-mode](https://github.com/user-attachments/assets/0d2da1ef-6582-47c2-8109-f411c7eb5698)
+
 ### User Mode
 
 개념
