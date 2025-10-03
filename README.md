@@ -67,7 +67,7 @@
 * [캐싱 종류](<System Design/Cache.md#캐싱-종류>)
 * [캐싱 전략](<System Design/Cache.md#캐싱-전략>)
 * [캐시 스탬피드 현상](<System Design/Cache.md#캐시-스탬피드-현상>)
-* [Rate Limitter](<System Design/Rate Limiter.md#rate-limiter>)
+* [Rate Limiter](<System Design/Rate Limiter.md#rate-limiter>)
 
 ### MSA
 
