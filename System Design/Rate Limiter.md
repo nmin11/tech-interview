@@ -6,6 +6,11 @@
 - 한도 초과 요청을 차단해서 과부하를 방지하고 시스템 안정성을 보장
 - DDoS 공격 등 악의적인 사용자로부터의 방어책
 
+**적용 방식**
+
+- CDN/WAF 혹은 상용 API Gateway에서 처리율 제한을 걸어줄 수 있음
+- IP, API Key, User Id, 엔드포인트 등을 기반으로 제한 설정
+
 ### Token Bucket Algorithm
 
 <img width="1042" height="745" alt="Tocken-Bucket-Algorithm" src="https://github.com/user-attachments/assets/241c2088-8100-4455-aba4-488a5cb44174" />
