@@ -77,6 +77,7 @@
 - [캐싱 전략](<System Design/Cache.md#캐싱-전략>)
 - [캐시 스탬피드 현상](<System Design/Cache.md#캐시-스탬피드-현상>)
 - [Rate Limiter](<System Design/Rate Limiter.md#rate-limiter>)
+- [MQ를 직접 설계할 때 폴링을 어떻게 구현할 것인가](<System Design/Message Queue.md#mq를-직접-설계할-때-폴링을-어떻게-구현할-것인가>)
 
 ### MSA
 
