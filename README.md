@@ -70,6 +70,10 @@
 - [JWT](Web/Security.md#jwt)
 - [OAuth 동작 흐름](Web/Security.md#oauth-동작-흐름)
 
+### AWS
+
+- [Lambda에서 DB 커넥션 풀 관리 방법](AWS/Lambda.md#lambda에서-db-커넥션-풀-관리-방법)
+
 ### System Design
 
 - [로드밸런싱](<System Design/Load Balancer.md#로드밸런싱>)
