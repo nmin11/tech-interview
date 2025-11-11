@@ -74,6 +74,7 @@
 ### AWS
 
 - [Lambda의 장단점](AWS/Lambda.md#lambda의-장단점)
+- [Cold Start 해결 방법](AWS/Lambda.md#cold-start-해결-방법)
 - [Lambda에서 DB 커넥션 풀 관리 방법](AWS/Lambda.md#lambda에서-db-커넥션-풀-관리-방법)
 - [DynamoDB LSI vs GSI](AWS/DynamoDB.md#dynamodb-lsi-vs-gsi)
 

@@ -25,6 +25,24 @@ Reference
 
 - [Ashish Saxena - Pros and Cons of AWS Lambda](https://www.linkedin.com/pulse/pros-cons-aws-lambda-ashish-saxena)
 
+## Cold Start 해결 방법
+
+### SnapStart
+
+- Java, Python, .NET 함수에 사용 가능
+- 사전에 초기화 작업을 마친 스냅샷을 재활용하는 기법
+- 스냅샷에서 특정 함수 고유의 변수를 전역변수화 하지 않도록 유의할 것
+
+### Provisioned Concurrency
+
+- 함수 실행 시간이 예측 가능한 경우에 활용하는 방식
+- 함수를 실행하기 이전 시점에 미리 warm 상태의 컨테이너를 유지해주는 방식
+
+### 주기적으로 수동 warm-up
+
+- CloudWatch Events 혹은 Step Functions를 활용해 함수를 주기적으로 호출해주는 방식
+- 하지만 Lambda 서비스는 정기적으로 실행 환경을 재활용하므로 이 시점에는 Cold Start를 경험하게 될 수도 있음
+
 ## Lambda에서 DB 커넥션 풀 관리 방법
 
 ### 문제점
