@@ -49,6 +49,7 @@
 - [Index](Database/Index.md#index)
 - [SQL 명령어의 실행 순서](Database/SQL.md#sql-명령어의-실행-순서)
 - [관계형 데이터베이스 vs NoSQL](Database/NoSQL.md#관계형-데이터베이스-vs-nosql)
+- [Offset 기반 페이지네이션의 성능 문제](<Database/Query Optimization.md#offset-기반-페이지네이션의-성능-문제>)
 
 ### Redis
 
