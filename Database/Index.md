@@ -23,6 +23,7 @@
   - 테이블 1개 당 1개만 가능
   - 생성, 수정, 삭제 시 데이터 재정렬 작업 필요
 - non-clustered
+
   - 테이블과 매핑된 별도의 인덱스 객체를 생성해서 관리 (인덱스 컬럼을 정렬)
   - 여러 개의 인덱싱 가능
   - 데이터 조회 시 RID LookUp 과정 필요
@@ -44,3 +45,25 @@ Reference
 - [Wikipidea - Database index](https://en.wikipedia.org/wiki/Database_index)
 - [bsjp400 - DB 인덱싱이란?](https://velog.io/@bsjp400/Database-DB-%EC%9D%B8%EB%8D%B1%EC%8B%B1Indexing%EC%9D%B4%EB%9E%80)
 - [망나니개발자 - 인덱스란?](https://mangkyu.tistory.com/96)
+
+## Covering Index
+
+**정의**
+
+- 쿼리에 필요한 모든 컬럼이 인덱스에 포함되어, 테이블에 접근하지 않고 인덱스만으로 쿼리를 처리할 수 있게 하는 것
+
+**장점**
+
+- 디스크 I/O 최소화
+- 쿼리 응답 속도 향상
+
+**단점**
+
+- 인덱스 크기 증가로 인한 저장 공간 증가
+- 쓰기 작업 시 인덱스 갱신에 대한 오버헤드 증가
+
+**적합 케이스**
+
+- 자주 조회되는 쿼리
+- `SELECT` 컬럼 수가 적은 경우
+- 읽기 위주의 테이블

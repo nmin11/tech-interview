@@ -52,6 +52,7 @@
 - [Transaction 정의](Database/Transaction.md#transaction-정의)
 - [트랜잭션 격리 수준](Database/Transaction.md#트랜잭션-격리-수준)
 - [Index](Database/Index.md#index)
+- [Covering Index](Database/Index.md#covering-index)
 - [SQL 명령어의 실행 순서](Database/SQL.md#sql-명령어의-실행-순서)
 - [관계형 데이터베이스 vs NoSQL](Database/NoSQL.md#관계형-데이터베이스-vs-nosql)
 - [Offset 기반 페이지네이션의 성능 문제](<Database/Query Optimization.md#offset-기반-페이지네이션의-성능-문제>)
