@@ -15,3 +15,9 @@ Reference
 
 - [MDN - Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness)
 - [JavaScript.info - Comparisons](https://javascript.info/comparison)
+
+## null vs undefined
+
+- null: 개발자가 의도적으로 할당하는 "값 없음" 명시
+- undefined: 값이 할당되지 않은 상태
+- 값이 없음을 명시할 때 null을 사용하고, undefined는 가급적이면 직접 사용하는 것을 피하는 것이 best practice
