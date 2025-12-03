@@ -70,6 +70,7 @@
 - [Web Server & WAS](Web/Server.md#web-server--was)
 - [JWT](Web/Security.md#jwt)
 - [OAuth 동작 흐름](Web/Security.md#oauth-동작-흐름)
+- [Debounce & Throttle](Web/Browser.md#debounce--throttle)
 
 ### AWS
 
