@@ -90,6 +90,7 @@
 - [Cold Start 해결 방법](AWS/Lambda.md#cold-start-해결-방법)
 - [Lambda에서 DB 커넥션 풀 관리 방법](AWS/Lambda.md#lambda에서-db-커넥션-풀-관리-방법)
 - [DynamoDB LSI vs GSI](AWS/DynamoDB.md#dynamodb-lsi-vs-gsi)
+- [DynamoDB Scan vs Query](AWS/DynamoDB.md#dynamodb-scan-vs-query)
 
 ### System Design
 
