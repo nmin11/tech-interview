@@ -74,9 +74,12 @@
 - [Cookie & Session](Web/HTTP.md#cookie--session)
 - [RESTful API](Web/API.md#restful-api)
 - [Web Server & WAS](Web/Server.md#web-server--was)
-- [JWT](Web/Security.md#jwt)
-- [OAuth 동작 흐름](Web/Security.md#oauth-동작-흐름)
 - [Debounce & Throttle](Web/Browser.md#debounce--throttle)
+
+### Authentication & Authorization
+
+- [JWT](<Authentication & Authorization/README.md#jwt>)
+- [OAuth 동작 흐름](<Authentication & Authorization/README.md#oauth-동작-흐름>)
 
 ### AWS
 
