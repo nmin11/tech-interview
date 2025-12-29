@@ -31,6 +31,7 @@
 - [`==` 연산과 `===` 연산의 차이](JavaScript/README.md#-연산과--연산의-차이)
 - [null vs undefined](JavaScript/README.md#null-vs-undefined)
 - [Promise의 상태](JavaScript/README.md#promise의-상태)
+- [Promise.all vs Promise.allSettled](JavaScript/README.md#promiseall-vs-promiseallsettled)
 
 ### Node.js
 
