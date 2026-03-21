@@ -23,7 +23,6 @@
   - 테이블 1개 당 1개만 가능
   - 생성, 수정, 삭제 시 데이터 재정렬 작업 필요
 - non-clustered
-
   - 테이블과 매핑된 별도의 인덱스 객체를 생성해서 관리 (인덱스 컬럼을 정렬)
   - 여러 개의 인덱싱 가능
   - 데이터 조회 시 RID LookUp 과정 필요
@@ -67,3 +66,53 @@ Reference
 - 자주 조회되는 쿼리
 - `SELECT` 컬럼 수가 적은 경우
 - 읽기 위주의 테이블
+
+## 복합 인덱스 (Composite Index)
+
+**정의**
+
+- 두 개 이상의 컬럼을 조합하여 생성하는 인덱스
+- 컬럼의 순서가 인덱스 활용에 큰 영향을 미침
+
+**Leftmost Prefix Rule**
+
+- 복합 인덱스는 정의된 컬럼 순서대로 왼쪽부터 적용됨
+- 중간 컬럼을 건너뛰면 그 이후 컬럼은 인덱스를 활용하지 못함
+
+```sql
+-- 인덱스: (A, B, C)
+
+WHERE A = 1                    -- O 인덱스 사용
+WHERE A = 1 AND B = 2          -- O 인덱스 사용
+WHERE A = 1 AND B = 2 AND C = 3 -- O 인덱스 사용 (전체)
+WHERE B = 2                    -- X 인덱스 미사용 (A가 없음)
+WHERE A = 1 AND C = 3          -- △ A만 인덱스 사용 (B를 건너뜀)
+```
+
+**범위 조건의 영향**
+
+- 범위 조건(`>`, `<`, `BETWEEN`, `LIKE`)이 사용되면 그 이후 컬럼은 인덱스를 효율적으로 활용하지 못함
+
+```sql
+-- 인덱스: (A, B, C)
+
+WHERE A = 1 AND B > 5 AND C = 3
+-- A, B까지 인덱스 사용, C는 필터링만 수행
+```
+
+**컬럼 순서 결정 기준**
+
+1. **동등 조건(=)을 범위 조건보다 앞에**
+   - `=` 조건이 있는 컬럼을 앞에 배치해야 뒤 컬럼까지 인덱스 활용 가능
+
+2. **카디널리티가 높은 컬럼을 앞에**
+   - 카디널리티: 컬럼이 가질 수 있는 고유 값의 수
+   - 높은 카디널리티 = 더 빠른 필터링
+
+3. **자주 사용되는 쿼리 패턴 고려**
+   - WHERE 절에 자주 등장하는 컬럼 조합을 분석
+
+Reference
+
+- [MySQL 공식문서 - Multiple-Column Indexes](https://dev.mysql.com/doc/refman/8.0/en/multiple-column-indexes.html)
+- [USE THE INDEX, LUKE - Concatenated Indexes](https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated-keys)
