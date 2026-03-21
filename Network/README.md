@@ -81,19 +81,19 @@ Reference
 
 ## TCP & UDP
 
-*Transmission Control Protocol & User Datagram Protocol*
+_Transmission Control Protocol & User Datagram Protocol_
 
 **비교**
 
-| 특성        | TCP                        | UDP                   |
-| :-------: | :-------------------------: | :-------------------: |
-| 연결 방식    | 커넥션 과정 필요               | 커넥션 과정 불필요         |
-| 신뢰성      | 데이터가 목적지에 도달하는 것을 보장 | 데이터 전송을 보장할 수 없음 |
-| 속도        | 느린 편                      | 단순하고 빠른 편          |
-| 시퀀스      | 패킷들은 목적지에 순서대로 도착    | 순서 보장 없음            |
-| 에러 체킹    | 흐름을 제어하면서 에러 체킹       | 기본적인 수준의 에러 체킹   |
-| 데이터 재전송 | 가능                        | 불가능                  |
-| 브로드캐스팅  | 미지원                       | 지원                   |
+|     특성      |                 TCP                  |             UDP              |
+| :-----------: | :----------------------------------: | :--------------------------: |
+|   연결 방식   |           커넥션 과정 필요           |      커넥션 과정 불필요      |
+|    신뢰성     | 데이터가 목적지에 도달하는 것을 보장 | 데이터 전송을 보장할 수 없음 |
+|     속도      |               느린 편                |       단순하고 빠른 편       |
+|    시퀀스     |   패킷들은 목적지에 순서대로 도착    |        순서 보장 없음        |
+|   에러 체킹   |     흐름을 제어하면서 에러 체킹      |  기본적인 수준의 에러 체킹   |
+| 데이터 재전송 |                 가능                 |            불가능            |
+| 브로드캐스팅  |                미지원                |             지원             |
 
 **TCP 사용 사례**
 
@@ -114,7 +114,74 @@ Reference
 Reference
 
 - [GeeksforGeeks - Differences between TCP and UDP](https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp)
-- [Avast - TCP vs UDP: What’s the Difference and Which Protocol Is Better?](https://www.avast.com/c-tcp-vs-udp-difference)
+- [Avast - TCP vs UDP: What's the Difference and Which Protocol Is Better?](https://www.avast.com/c-tcp-vs-udp-difference)
+
+## TCP 3-Way Handshaking
+
+_TCP 연결 수립 과정_
+
+### 개요
+
+- TCP는 신뢰성 있는 연결을 보장하기 위해 데이터 전송 전 연결 수립 과정을 거침
+- 3-way handshaking은 클라이언트와 서버 간 연결을 설정하는 3단계 프로세스
+
+### 과정
+
+```
+Client                              Server
+  |                                   |
+  |  -------- 1. SYN (seq=x) ------>  |
+  |                                   |
+  |  <-- 2. SYN-ACK (seq=y, ack=x+1)  |
+  |                                   |
+  |  -------- 3. ACK (ack=y+1) ---->  |
+  |                                   |
+```
+
+**1단계: SYN (Synchronize)**
+
+- 클라이언트가 서버에 연결 요청
+- 클라이언트는 임의의 시퀀스 번호(seq=x)를 생성하여 SYN 패킷 전송
+- 클라이언트 상태: `CLOSED` → `SYN_SENT`
+
+**2단계: SYN-ACK (Synchronize-Acknowledge)**
+
+- 서버가 클라이언트의 요청을 수락
+- 서버는 자신의 시퀀스 번호(seq=y)와 클라이언트 시퀀스 번호에 1을 더한 확인 번호(ack=x+1)를 포함한 SYN-ACK 패킷 전송
+- 서버 상태: `LISTEN` → `SYN_RECEIVED`
+
+**3단계: ACK (Acknowledge)**
+
+- 클라이언트가 서버의 응답을 확인
+- 서버의 시퀀스 번호에 1을 더한 확인 번호(ack=y+1)를 포함한 ACK 패킷 전송
+- 연결 수립 완료, 데이터 전송 가능
+- 클라이언트 상태: `SYN_SENT` → `ESTABLISHED`
+- 서버 상태: `SYN_RECEIVED` → `ESTABLISHED`
+
+### 왜 3-way인가?
+
+- **양방향 통신 확인**: 클라이언트 → 서버, 서버 → 클라이언트 양쪽 모두 통신 가능함을 확인
+- **시퀀스 번호 동기화**: 양측이 서로의 시퀀스 번호를 알아야 이후 패킷 순서 추적 가능
+- **신뢰성 보장**: 연결 전 양측이 준비되었음을 상호 확인
+
+### 참고: 4-Way Handshaking (연결 종료)
+
+```
+Client                              Server
+  |                                   |
+  |  -------- 1. FIN -------->        |
+  |  <------- 2. ACK ---------        |
+  |  <------- 3. FIN ---------        |
+  |  -------- 4. ACK -------->        |
+  |                                   |
+```
+
+- 연결 종료 시에는 4단계가 필요
+- 양측 모두 전송할 데이터가 없음을 확인해야 하므로 FIN과 ACK를 각각 주고받음
+
+Reference
+
+- [GeeksforGeeks - TCP 3-Way Handshake Process](https://www.geeksforgeeks.org/tcp-3-way-handshake-process/)
 
 ## 주소창에 URL을 입력하면 벌어지는 일들
 

@@ -67,6 +67,7 @@
 
 - [OSI 7 Layer](Network/README.md#osi-7-layer)
 - [TCP & UDP](Network/README.md#tcp--udp)
+- [TCP 3-Way Handshaking](Network/README.md#tcp-3-way-handshaking)
 - [주소창에 URL을 입력하면 벌어지는 일들](Network/README.md#주소창에-url을-입력하면-벌어지는-일들)
 
 ### Web
