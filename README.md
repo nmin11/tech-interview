@@ -64,6 +64,19 @@
 
 - [싱글 스레드로 만들어진 이유](Redis/README.md#싱글-스레드로-만들어진-이유)
 
+### Kafka
+
+- [Kafka 개요](Kafka/README.md#kafka-개요)
+- [핵심 구성요소](Kafka/README.md#핵심-구성요소)
+- [고성능의 이유](Kafka/README.md#고성능의-이유)
+- [Producer - Consumer 관계](Kafka/README.md#producer---consumer-관계)
+- [Consumer Group 구독 관계](Kafka/README.md#consumer-group-구독-관계)
+- [Rebalancing](Kafka/README.md#rebalancing)
+- [Replication](Kafka/README.md#replication)
+- [순서 보장](Kafka/README.md#순서-보장)
+- [메시지 전달 보장 방식](Kafka/README.md#메시지-전달-보장-방식)
+- [Kafka vs 전통적인 메시지 큐](Kafka/README.md#kafka-vs-전통적인-메시지-큐)
+
 ### Network
 
 - [OSI 7 Layer](Network/README.md#osi-7-layer)
