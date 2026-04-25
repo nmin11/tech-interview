@@ -136,3 +136,49 @@ const params = {
 
 const result = await dynamodb.query(params).promise();
 ```
+
+## DynamoDB 스키마 설계
+
+### 스키마리스(Schema-less)의 의미
+
+- DynamoDB는 테이블 생성 시 **파티션 키(+ 선택적 정렬 키)만 고정**하고, 나머지 Attribute는 항목마다 자유롭게 다를 수 있음
+- 필드를 미리 선언하지 않아도 되지만, 그렇다고 설계 없이 아무렇게나 써도 된다는 의미는 아님
+- **Access Pattern을 먼저 정의하고, 거기에 맞춰 키를 설계**하는 것이 핵심
+
+### Single Table Design vs Multi Table Design
+
+| 구분 | Single Table Design | Multi Table Design |
+| :-: | :-: | :-: |
+| **테이블 수** | 1개에 여러 엔티티 혼재 | 엔티티별로 테이블 분리 |
+| **조회 효율** | 관련 엔티티를 1번의 Query로 조회 가능 | Join 불가 → 여러 번 조회 필요 |
+| **복잡도** | 키 설계가 복잡 | 직관적 |
+| **비용** | 낮음 (요청 수 최소화) | 높아질 수 있음 |
+| **적합한 경우** | 엔티티 간 관계가 많고 함께 조회하는 경우 | 엔티티가 독립적이고 단순한 경우 |
+
+### Single Table Design 키 설계 패턴
+
+- 파티션 키와 정렬 키를 범용적으로 `pk`, `sk`처럼 추상화하여 여러 엔티티를 한 테이블에 수용
+
+```
+pk               sk                  기타 Attribute
+─────────────────────────────────────────────────────────────
+USER#user123     METADATA            name, email, ...
+USER#user123     VIDEO#vid001        status, createdAt, ...
+USER#user123     VIDEO#vid002        status, createdAt, ...
+VIDEO#vid001     TRANSCODE#job001    inputUrl, outputUrl, ...
+VIDEO#vid001     TRANSCODE#job002    inputUrl, outputUrl, ...
+```
+
+- `pk=USER#user123` + `sk begins_with VIDEO#` → 특정 사용자의 영상 목록 한 번에 조회
+- `pk=VIDEO#vid001` + `sk begins_with TRANSCODE#` → 특정 영상의 트랜스코딩 이력 한 번에 조회
+
+### Sparse Index
+
+- GSI를 생성할 때, **모든 항목이 아닌 일부 항목에만 존재하는 Attribute**를 인덱스 키로 지정하면 해당 항목만 인덱스에 포함됨
+- 예시: `status=FAILED` 인 항목에만 Attribute를 부여하고 GSI로 구성 → 실패한 작업만 빠르게 조회 가능하고 인덱스 크기도 최소화
+
+### 설계 원칙 요약
+
+- **Access Pattern 먼저**: 조회 패턴을 먼저 나열하고, 그것을 커버하는 키/인덱스를 설계
+- **정규화보다 역정규화**: RDBMS처럼 테이블을 쪼개지 않고, 함께 조회되는 데이터는 같은 항목이나 같은 파티션에 모아두는 것이 효율적
+- **핫 파티션 주의**: 특정 파티션 키에 트래픽이 몰리면 처리량 제한에 걸림 → 파티션 키를 고르게 분산되도록 설계

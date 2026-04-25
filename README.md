@@ -106,6 +106,7 @@
 - [Lambda에서 DB 커넥션 풀 관리 방법](AWS/Lambda.md#lambda에서-db-커넥션-풀-관리-방법)
 - [DynamoDB LSI vs GSI](AWS/DynamoDB.md#dynamodb-lsi-vs-gsi)
 - [DynamoDB Scan vs Query](AWS/DynamoDB.md#dynamodb-scan-vs-query)
+- [DynamoDB 스키마 설계](AWS/DynamoDB.md#dynamodb-스키마-설계)
 
 ### System Design
 
